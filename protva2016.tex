@@ -123,7 +123,7 @@ $ gcc -m32 -DMAIN_TYPE=short -DLIB_TYPE=int -O main.c lib.c && ./a.out
 иметь тип \verb|p|; можно лишь учитывать уровень косвенности (тогда, например,
 аргумент \verb|char *argv[]| будет иметь тип \verb|pp|).  Кроме того, указатели
 на функции можно типизировать полностью.  В качестве примера рассмотрим
-функцию \verb|signal(3)|:
+функцию \verb|signal(2)|:
 \begin{verbatim}
     typedef void (*sighandler_t)(int);
     sighandler_t signal(int signum, sighandler_t handler);
